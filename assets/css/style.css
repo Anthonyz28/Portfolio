@@ -1,0 +1,86 @@
+*
+
+body {
+    color: darkslateblue ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+   
+}
+header a {
+    color: gray;
+    padding-left: 25px;
+}
+
+
+header nav {
+    float: right;
+    margin: 10px 0;
+
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 25px;
+    font-size: 20px;
+
+}
+
+.hero{
+    background-image: url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: 70%;
+    height: 300px;
+}
+
+.hero h2 {
+    color: dimgray;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 35px;
+    line-height: 500px;
+}
+.about-me {
+    margin-left: 35px;
+    display: flex;
+}
+.about-me h2 {
+    height: 100px;
+    border-right: 5px solid darkslategrey;
+    font-size: 50px;
+    display: inline-block;
+    width: 15%;
+    float:left;
+}
+
+.about-me h2 p {
+    width: 80%;
+    margin: auto;
+}
+
+.work h2 {
+    height: 400px;
+    border-right: 5px solid darkslategrey;
+    font-size: 50px;
+    display: inline-block;
+    width: 20%;
+}
+
+.contact-me h2 {
+    height: 100px;
+    border-right: 5px solid darkslategrey;
+    font-size: 50px;
+    display: inline-block;
+    width: 20%;
+}
