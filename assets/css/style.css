@@ -3,6 +3,7 @@
 body {
     color: darkslateblue ;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
 
 header {
@@ -10,8 +11,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
    
 }
@@ -51,36 +50,104 @@ header nav ul li a {
     font-size: 35px;
     line-height: 500px;
 }
+.about-me h2, .work h2, .contact-me h2 {
+    width: 25%;
+    font-size: 50px;
+    display:flex;
+    text-align: end;
+ 
+    
+}
 .about-me {
-    margin-left: 35px;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .about-me h2 {
-    height: 100px;
-    border-right: 5px solid darkslategrey;
-    font-size: 50px;
-    display: inline-block;
-    width: 15%;
-    float:left;
+    height: auto;
 }
 
 .about-me h2 p {
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    flex: right;
 }
 
-.work h2 {
-    height: 400px;
-    border-right: 5px solid darkslategrey;
-    font-size: 50px;
-    display: inline-block;
-    width: 20%;
-}
 
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 .contact-me h2 {
     height: 100px;
+}
+.contact-me ul li  {
+    display: inline;
+    border-bottom: 5px solid darkslategrey;
+    justify-content: center;
+}
+.title {
+    display: flex;
+    width: 25%;
     border-right: 5px solid darkslategrey;
-    font-size: 50px;
-    display: inline-block;
-    width: 20%;
+    margin: 15px;
+    float: left;
+
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.work h2 {
+    height: auto;
+ 
+}
+/*--work grid --*/
+.work-grid-wrapper {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.work-grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 8fr);
+    grid-template-rows: repeat(3, 4fr);
+    grid-gap: 25px;
+}
+
+.work-grid-item {
+    border: 2px solid gray;
+    text-align: left;
+    background-color:lightskyblue;
+
+}
+
+.work-grid-item:hover {
+   opacity: 1;
+}
+
+.work-grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.work-grid-name {
+    background-color: lightblue;
+    color: darkslategray;
+    text-align: center;
+    width: 150px;
+  
+    
+}
+
+.item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url(../images/image-1.png);
+    background-size: 125%;
 }
